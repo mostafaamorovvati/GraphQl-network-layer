@@ -3,9 +3,9 @@ package com.example.networklayer.presentation.location
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.networklayer.data.commun.onError
-import com.example.networklayer.data.commun.onLoading
-import com.example.networklayer.data.commun.onSuccess
+import com.example.networklayer.data.datasource.remote.commun.onError
+import com.example.networklayer.data.datasource.remote.commun.onLoading
+import com.example.networklayer.data.datasource.remote.commun.onSuccess
 import com.example.networklayer.databinding.ActivityLocationBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

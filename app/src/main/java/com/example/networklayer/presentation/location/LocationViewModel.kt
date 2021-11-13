@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.apollo.GetLocationQuery
-import com.example.networklayer.data.commun.ResponseResult
+import com.example.networklayer.data.datasource.remote.commun.ResponseResult
 import com.example.networklayer.data.repository.LocationRepository
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

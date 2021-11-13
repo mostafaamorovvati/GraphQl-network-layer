@@ -4,8 +4,8 @@ import com.apollographql.apollo.coroutines.await
 import com.example.apollo.GetCharactersQuery
 import com.example.apollo.GetLocationQuery
 import com.example.networklayer.R
-import com.example.networklayer.data.commun.DataSourceException
-import com.example.networklayer.data.commun.ResponseResult
+import com.example.networklayer.data.datasource.remote.commun.DataSourceException
+import com.example.networklayer.data.datasource.remote.commun.ResponseResult
 
 class GraphqlApiHelperImpl : GraphqlApiHelper {
 

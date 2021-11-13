@@ -1,7 +1,5 @@
 package com.example.networklayer.di
 
-import com.example.networklayer.data.datasource.remote.rest.RestApiHelperImpl
-import com.example.networklayer.data.datasource.remote.rest.RestApiHelper
 import com.example.networklayer.data.datasource.remote.rest.RestApiService
 import com.example.networklayer.utils.REST_BASE_URL
 import org.koin.dsl.module
@@ -11,10 +9,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 val retrofitModule = module {
     factory { provideForecastApi(get()) }
     single { provideRetrofit() }
-
-    single<RestApiHelper> {
-        return@single RestApiHelperImpl(get())
-    }
 }
 
 

@@ -1,4 +1,4 @@
-package com.example.networklayer.data.commun
+package com.example.networklayer.data.datasource.remote.commun
 
 
 sealed class ResponseResult<out T> {

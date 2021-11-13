@@ -1,7 +1,7 @@
 package com.example.networklayer.data.repository
 
 import com.example.apollo.GetLocationQuery
-import com.example.networklayer.data.commun.ResponseResult
+import com.example.networklayer.data.datasource.remote.commun.ResponseResult
 import com.example.networklayer.data.datasource.remote.graphql.GraphqlApiHelper
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

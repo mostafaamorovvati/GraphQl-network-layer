@@ -3,7 +3,7 @@ package com.example.networklayer.presentation.characters
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.networklayer.data.commun.ResponseResult
+import com.example.networklayer.data.datasource.remote.commun.ResponseResult
 import com.example.networklayer.data.repository.CharacterRepository
 import com.example.networklayer.data.repository.PhotoRepository
 import com.example.networklayer.data.models.CharactersModel

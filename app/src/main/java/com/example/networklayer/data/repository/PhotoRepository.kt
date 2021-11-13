@@ -1,6 +1,6 @@
 package com.example.networklayer.data.repository
 
-import com.example.networklayer.data.commun.ResponseResult
+import com.example.networklayer.data.datasource.remote.commun.ResponseResult
 import com.example.networklayer.data.datasource.remote.rest.RestApiHelper
 import com.example.networklayer.data.models.Photo
 import kotlinx.coroutines.flow.Flow

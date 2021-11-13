@@ -5,9 +5,9 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.apollographql.apollo.api.Error
-import com.example.networklayer.data.commun.onError
-import com.example.networklayer.data.commun.onLoading
-import com.example.networklayer.data.commun.onSuccess
+import com.example.networklayer.data.datasource.remote.commun.onError
+import com.example.networklayer.data.datasource.remote.commun.onLoading
+import com.example.networklayer.data.datasource.remote.commun.onSuccess
 import com.example.networklayer.databinding.ActivityCharactersBinding
 import com.example.networklayer.data.models.CharactersModel
 import com.example.networklayer.data.models.SingleCharacterModel
