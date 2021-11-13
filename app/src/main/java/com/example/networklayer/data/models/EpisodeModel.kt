@@ -1,4 +1,4 @@
-package com.example.networklayer.domain.models
+package com.example.networklayer.data.models
 
 import android.os.Parcelable
 import androidx.room.Entity

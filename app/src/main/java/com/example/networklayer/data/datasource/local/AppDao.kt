@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
-import com.example.networklayer.domain.models.SingleCharacterModel
+import com.example.networklayer.data.models.SingleCharacterModel
 
 @Dao
 interface AppDao {

@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.networklayer.databinding.ItemEpisodeBinding
-import com.example.networklayer.domain.models.EpisodeModel
+import com.example.networklayer.data.models.EpisodeModel
 
 class EpisodesAdapter(private val list: List<EpisodeModel>) :
     RecyclerView.Adapter<EpisodesAdapter.ViewHolder>() {

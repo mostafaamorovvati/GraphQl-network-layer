@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import coil.load
 import com.example.networklayer.R
 import com.example.networklayer.databinding.ActivityDetailsBinding
-import com.example.networklayer.domain.models.SingleCharacterModel
+import com.example.networklayer.data.models.SingleCharacterModel
 import com.example.networklayer.utils.CHARACTER_EXTRA
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

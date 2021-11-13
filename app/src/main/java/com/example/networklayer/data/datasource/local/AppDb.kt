@@ -6,8 +6,8 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.example.networklayer.BuildConfig
-import com.example.networklayer.domain.models.EpisodeModel
-import com.example.networklayer.domain.models.SingleCharacterModel
+import com.example.networklayer.data.models.EpisodeModel
+import com.example.networklayer.data.models.SingleCharacterModel
 
 @Database(entities = [SingleCharacterModel::class, EpisodeModel::class], version = 1)
 @TypeConverters(CharactersDataConverter::class)

@@ -1,12 +1,12 @@
 package com.example.networklayer.di
 
-import com.example.networklayer.data.datasource.remote.RemoteDataSource
-import com.example.networklayer.data.datasource.remote.RemoteDataSourceImpl
+import com.example.networklayer.data.datasource.remote.graphql.GraphqlApiHelper
+import com.example.networklayer.data.datasource.remote.graphql.GraphqlApiHelperImpl
 import org.koin.dsl.module
 
 val appModule = module {
 
-    single<RemoteDataSource> { RemoteDataSourceImpl() }
+    single<GraphqlApiHelper> { GraphqlApiHelperImpl() }
 
 }
 

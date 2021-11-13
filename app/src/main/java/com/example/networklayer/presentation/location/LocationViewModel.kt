@@ -6,12 +6,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.apollo.GetLocationQuery
 import com.example.networklayer.data.commun.ResponseResult
-import com.example.networklayer.data.repository.AppRepository
+import com.example.networklayer.data.repository.LocationRepository
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class LocationViewModel(
-    private val appRepository: AppRepository
+    private val appRepository: LocationRepository
 ) : ViewModel() {
 
     private val _resultListLocations =
@@ -21,7 +21,6 @@ class LocationViewModel(
 
     fun getListLocations(page: Int) {
         viewModelScope.launch {
-
             appRepository.getLocations(page).collect {
                 _resultListLocations.postValue(it)
             }

@@ -2,14 +2,15 @@ package com.example.networklayer.presentation.characters
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.apollographql.apollo.api.Error
 import com.example.networklayer.data.commun.onError
 import com.example.networklayer.data.commun.onLoading
 import com.example.networklayer.data.commun.onSuccess
 import com.example.networklayer.databinding.ActivityCharactersBinding
-import com.example.networklayer.domain.models.CharactersModel
-import com.example.networklayer.domain.models.SingleCharacterModel
+import com.example.networklayer.data.models.CharactersModel
+import com.example.networklayer.data.models.SingleCharacterModel
 import com.example.networklayer.presentation.details.DetailsActivity
 import com.example.networklayer.utils.CHARACTER_EXTRA
 import com.example.networklayer.utils.hide
@@ -28,6 +29,7 @@ class CharactersActivity : AppCompatActivity() {
         setContentView(binding.root)
         initObserver()
         viewModel.getListCharacters(1)
+        viewModel.getPhoto()
     }
 
     private fun initObserver() {
@@ -47,6 +49,20 @@ class CharactersActivity : AppCompatActivity() {
                 binding.progressCircular.show()
             }
         }
+
+        viewModel.resultPhoto.observe(this){ it ->
+            it.onSuccess {
+                val data = it.body()
+                Log.d("LOG_TAG", "onSuccess: ${data?.get(0)?.author}")
+            }.onError {
+                Log.d("LOG_TAG", "onError: ${it.message}")
+            }.onLoading {
+                Log.d("LOG_TAG", "onLoading: Loading")
+            }
+        }
+
+
+
     }
 
     private fun setListCharacters(list: CharactersModel) {

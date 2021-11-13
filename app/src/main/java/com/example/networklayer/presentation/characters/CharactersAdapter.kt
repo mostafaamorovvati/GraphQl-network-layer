@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.networklayer.R
 import com.example.networklayer.databinding.ItemCharacterBinding
-import com.example.networklayer.domain.models.SingleCharacterModel
+import com.example.networklayer.data.models.SingleCharacterModel
 
 class CharactersAdapter(
     private val list: List<SingleCharacterModel>,

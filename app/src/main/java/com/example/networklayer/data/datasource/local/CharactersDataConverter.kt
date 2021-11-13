@@ -3,8 +3,8 @@ package com.example.networklayer.data.datasource.local
 import androidx.room.TypeConverter
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.example.networklayer.domain.models.EpisodeModel
-import com.example.networklayer.domain.models.SingleCharacterModel
+import com.example.networklayer.data.models.EpisodeModel
+import com.example.networklayer.data.models.SingleCharacterModel
 import java.io.Serializable
 
 class CharactersDataConverter : Serializable {

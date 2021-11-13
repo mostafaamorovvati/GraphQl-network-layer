@@ -1,4 +1,4 @@
-package com.example.networklayer.domain.models
+package com.example.networklayer.data.models
 
 data class InfoModel(
     val pages: Int,
