@@ -2,8 +2,8 @@ package com.example.networklayer.di
 
 import android.app.Application
 import androidx.room.Room
-import com.example.networklayer.data.datasource.local.AppDao
-import com.example.networklayer.data.datasource.local.AppDb
+import com.example.networklayer.data.datasource.local.room.AppDao
+import com.example.networklayer.data.datasource.local.room.AppDb
 import org.koin.android.ext.koin.androidApplication
 import org.koin.dsl.module
 

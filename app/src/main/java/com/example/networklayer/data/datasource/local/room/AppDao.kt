@@ -1,4 +1,4 @@
-package com.example.networklayer.data.datasource.local
+package com.example.networklayer.data.datasource.local.room
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -13,5 +13,5 @@ interface AppDao {
     suspend fun getListCharacters(): List<SingleCharacterModel>
 
     @Insert(onConflict = REPLACE)
-    suspend fun saveListCharacters(listTrivia: List<SingleCharacterModel>)
+    suspend fun saveListCharacters(list: List<SingleCharacterModel>)
 }

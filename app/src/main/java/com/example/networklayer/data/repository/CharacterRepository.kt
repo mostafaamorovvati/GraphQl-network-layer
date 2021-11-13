@@ -2,7 +2,7 @@ package com.example.networklayer.data.repository
 
 import android.app.Application
 import com.example.networklayer.data.datasource.remote.commun.ResponseResult
-import com.example.networklayer.data.datasource.local.AppDb
+import com.example.networklayer.data.datasource.local.room.AppDb
 import com.example.networklayer.data.datasource.remote.graphql.GraphqlApiHelper
 import com.example.networklayer.data.mappers.mapToLocalModel
 import com.example.networklayer.data.models.CharactersModel

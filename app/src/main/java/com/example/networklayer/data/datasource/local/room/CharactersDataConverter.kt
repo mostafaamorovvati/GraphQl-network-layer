@@ -1,4 +1,4 @@
-package com.example.networklayer.data.datasource.local
+package com.example.networklayer.data.datasource.local.room
 
 import androidx.room.TypeConverter
 import com.google.gson.Gson

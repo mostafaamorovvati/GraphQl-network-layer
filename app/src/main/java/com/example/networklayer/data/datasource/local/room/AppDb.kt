@@ -1,4 +1,4 @@
-package com.example.networklayer.data.datasource.local
+package com.example.networklayer.data.datasource.local.room
 
 import android.content.Context
 import androidx.room.Database
@@ -9,7 +9,7 @@ import com.example.networklayer.BuildConfig
 import com.example.networklayer.data.models.EpisodeModel
 import com.example.networklayer.data.models.SingleCharacterModel
 
-@Database(entities = [SingleCharacterModel::class, EpisodeModel::class], version = 1)
+@Database(entities = [SingleCharacterModel::class, EpisodeModel::class], version = 2)
 @TypeConverters(CharactersDataConverter::class)
 abstract class AppDb : RoomDatabase() {
 

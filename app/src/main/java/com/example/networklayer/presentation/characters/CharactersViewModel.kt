@@ -22,13 +22,12 @@ class CharactersViewModel(
 
     fun getListCharacters(page: Int) {
         viewModelScope.launch {
-
             characterRepository.getCharacters(page).collect {
                 resultListCharacters.postValue(it)
             }
-
         }
     }
+
 
     fun getPhoto() {
         viewModelScope.launch {
