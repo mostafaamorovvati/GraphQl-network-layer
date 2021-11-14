@@ -25,8 +25,7 @@ abstract class AppDb : RoomDatabase() {
                     context.applicationContext,
                     AppDb::class.java,
                     BuildConfig.APPLICATION_ID
-                )
-                    .fallbackToDestructiveMigration()
+                ).fallbackToDestructiveMigration()
                     .build()
                     .also { INSTANCE = it }
             }

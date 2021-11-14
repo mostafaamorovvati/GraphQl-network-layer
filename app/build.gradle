@@ -7,12 +7,14 @@ plugins {
 }
 
 android {
+
+
     compileSdkVersion 31
-    buildToolsVersion "30.0.3"
+    buildToolsVersion '32.0.0 rc1'
 
     defaultConfig {
         applicationId "com.example.networklayer"
-        minSdkVersion 21
+        minSdkVersion 17
         targetSdkVersion 31
         multiDexEnabled true
         versionCode 1
@@ -39,13 +41,14 @@ android {
         enabled = true
     }
 
+
 }
 
 dependencies {
 
     def coil = "1.1.1"
     def gson = "2.8.6"
-    def room_version = "2.2.6"
+    def room_version = "2.3.0"
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -62,13 +65,13 @@ dependencies {
 
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.4.0'
 
     // Koin
-    implementation "org.koin:koin-android:2.0.1"
-    implementation 'org.koin:koin-androidx-viewmodel:2.0.1'
-    implementation 'org.koin:koin-androidx-scope:2.0.1'
+    implementation "org.koin:koin-android:2.2.2"
+    implementation 'org.koin:koin-androidx-viewmodel:2.2.2'
+    implementation 'org.koin:koin-androidx-scope:2.2.2'
 
     //Coroutine//
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1'

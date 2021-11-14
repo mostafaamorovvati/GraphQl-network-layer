@@ -14,12 +14,12 @@ import kotlinx.coroutines.flow.onStart
 class CharacterRepository(
     private val graphqlApiHelper: GraphqlApiHelper,
     application: Application
-) {
+)  {
 
     private val db = AppDb.getDatabase(application)
     private val appDao = db.appDao()
 
-    suspend fun getCharacters(page: Int): Flow<ResponseResult<CharactersModel>> =
+     suspend fun getCharacters(page: Int): Flow<ResponseResult<CharactersModel>> =
         flow {
             when (val result = graphqlApiHelper.getCharacters(page)) {
                 is ResponseResult.Success -> {
