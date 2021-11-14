@@ -30,6 +30,7 @@ class CharacterRepository(
                         }
                     }
                 }
+
                 is ResponseResult.Error -> {
                     val listCharacters = appDao.getListCharacters()
                     if (listCharacters.isNotEmpty()) {
